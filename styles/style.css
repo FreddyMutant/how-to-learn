@@ -30,7 +30,7 @@
   z-index: 4;
 }
 /*Второй элемент*/
-.header__header-title {
+.header__title {
   align-self: center;
   margin: 0;
   margin-left: 64px;
@@ -65,6 +65,7 @@
   width: 765px;
   height: 608px;
   z-index: 2;
+  object-fit: fill;
 }
 /*Пятый элемент*/
 .header__square-pic {
@@ -87,7 +88,6 @@
 /*Блок две колонки*/
 .two-columns {
   display: flex;
-  margin: auto;
   width: 80%;
   justify-content: space-between;
 }
@@ -107,17 +107,20 @@
   justify-content: space-between;
   width: 80%;
   min-width: 784px;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
-/*Строчки списка*/
+/*Строчки списка - элементы группы*/
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   margin: 0;
   margin-bottom: 30px;
+}
+/*Последний элемент в группе*/
+.two-columns__paragraph:last-child {
+  margin: 0;
 }
 /*Выделенная часть текста*/
 .two-columns__span-accent {
@@ -133,7 +136,7 @@
 }
 /*Заголовок*/
 .section-title {
-  margin: auto;
+  margin: 0 auto;
   width: 60%;
   text-align: center;
   line-height: 1.15em;
@@ -142,7 +145,7 @@
 }
 /*Подзаголовок*/
 .section-subtitle {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 20px;
   width: 60%;
   text-align: center;
@@ -155,7 +158,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto;
   width: 1100px;
 }
 /*Блоки таблички*/
@@ -170,33 +173,30 @@
 /*Заголовки блоков*/
 .table__heading {
   margin: 0;
-  top: 0;
-  left: 0;
   line-height: 1.15em;
   font-size: 24px;
   font-weight: 600;
 }
 /*Тексты блоков*/
 .table__text {
-  margin-top: 0;
+  margin-bottom: 0;
   margin-top: 20px;
-}
-/*Источник*/
-.table__text_source {
-  margin: 0;
+  line-height: 1.2em;
+  font-size: 18px;
+  font-weight: normal;
 }
 /*Конец секции digits*/
 /*Начало секции Фейнман*/
 .feynman {
   position: relative;
-  height: 890px;
+  min-height: 890px;
   width: 100%;
   background-color: #f2f2f2;
   z-index: 0;
 }
 /*Заголовок*/
 .feynman__title {
-  margin: auto;
+  margin: 0 auto;
   padding-top: 100px;
   text-align: center;
   width: 648px;
@@ -207,7 +207,7 @@
 }
 /*Подзаголовок*/
 .feynman__subtitle {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   margin-top: 70px;
   line-height: 51px;
@@ -219,7 +219,7 @@
 .feynman__link {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 48px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -233,6 +233,8 @@
   bottom: 0;
   left: 0;
   z-index: -1;
+  width: 867px;
+  height: 637px;
 }
 /*Конец секции Feynman*/
 /*Начало секции Kaufman*/
@@ -240,28 +242,27 @@
   position: relative;
   overflow: hidden;
   background-color: #1f1f1f;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding: 90px 0;
   z-index: 0;
   color: white;
 }
 /*Заголовок*/
-.section-title__theme_dark {
+.section-title_theme_dark {
   width: 60%;
   line-height: 1.15em;
   font-size: 60px;
   font-weight: 600;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 /*Подзаголовок*/
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   width: 60%;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 20px;
 }
 /*Табличка. Повторяются свойства блока table*/
@@ -287,6 +288,8 @@
 }
 /*Картинка*/
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
   position: absolute;
   top: 0;
   right: -210px;
@@ -358,6 +361,7 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  padding: 0;
 }
 /*Ссылки на соцсети*/
 .footer__column_content_social {
