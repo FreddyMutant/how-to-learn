@@ -65,7 +65,7 @@
   width: 765px;
   height: 608px;
   z-index: 2;
-  object-fit: fill;
+  object-fit: cover;
 }
 /*Пятый элемент*/
 .header__square-pic {
@@ -159,6 +159,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0;
   width: 1100px;
 }
 /*Блоки таблички*/
@@ -324,7 +325,7 @@
   flex-basis: 711px;
 }
 /*Автор*/
-.footer__autor {
+.footer__author {
   position: relative;
   margin: 18px 0;
   line-height: 25px;
@@ -361,6 +362,8 @@
   font-size: 18px;
   font-weight: normal;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 /*Ссылки на соцсети*/
 .footer__column_content_social {
