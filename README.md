@@ -8,13 +8,13 @@
 
 One page site about study tips and methologies.
 
-# Examples
+The project aims to facilitate the learning process. It includes links to helpful books, resources, and YouTube videos. Contains tables with techniques to help you approach learning more effectively.
+
+### Examples
 
 <p align="center"><img  src="./readme_screenshots/techniques.png" width=500px hight=500px></p>
 <p align="center"><img  src="./readme_screenshots/kaufman.png" width=500px hight=500px></p>
 <p align="center"><img  src="./readme_screenshots/videos.png" width=500px hight=500px></p>
-
-The project aims to facilitate the learning process. It includes links to helpful books, resources, and YouTube videos. Contains tables with techniques to help you approach learning more effectively.
 
 ## Functionality
 
