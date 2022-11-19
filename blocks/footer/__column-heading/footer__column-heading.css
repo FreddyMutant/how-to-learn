@@ -1,5 +1,6 @@
-.resources__logo {
-  width: 270px;
-  height: 38px;
-  margin: 0 auto;
+.footer__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
 }
